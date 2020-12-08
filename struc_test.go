@@ -33,7 +33,7 @@ func TestStruct(t *testing.T) {
    }else{
 	   fmt.Println("got != want", got,want)
    }
-
+   fmt.Printf("address of got %p, address of want %p \n",&got,&want)
    fmt.Println("got to string", fmt.Sprintf("%#v", got))
    assert.Equal(t, got, want)		
 }
